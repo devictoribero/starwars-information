@@ -8,3 +8,17 @@
     grid-template-columns: repeat(auto-fit, minmax(150px, 0.25fr));
   }
 }
+
+.Slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.Slider > * {
+  flex: 0 0 30%;
+  width: 100%;
+  scroll-snap-align: center;
+}

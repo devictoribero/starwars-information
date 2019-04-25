@@ -2,24 +2,25 @@
   display: block;
   box-sizing: border-box;
   padding: 10px;
-  min-height: 100px;
+  min-height: 150px;
   width: 100%;
-  max-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 4px 6px -3px rgba(1, 1, 1, 0.2);
-  background: linear-gradient(to bottom right, #202020, #131313);
+  background-image: linear-gradient(to bottom right, #202020, #131313);
   color: #ccc9b4;
   text-decoration: none;
 
-  transition: transform 0.25s ease;
+  transition: background-image ease 0.35s, transform ease 0.35s;
 }
 .Card:hover {
-  transform: scale(1.25);
   box-shadow: 0 6px 7px -3px rgba(1, 1, 1, 0.5);
+  transform: scale(1.25);
+  background-image: linear-gradient(to bottom right, #131313, #202020);
+  z-index: 10;
 }
 
 .Card-title {
