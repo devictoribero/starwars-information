@@ -1,0 +1,1 @@
+export const apiBasePath = 'https://swapi.co/api'

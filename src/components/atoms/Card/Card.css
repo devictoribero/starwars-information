@@ -1,0 +1,28 @@
+.Card {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 100px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px -3px rgba(1, 1, 1, 0.2);
+  background: linear-gradient(to bottom right, #202020, #131313);
+  color: #c5b6d5;
+  text-decoration: none;
+
+  transition: transform 0.25s ease;
+}
+.Card:hover {
+  transform: scale(1.25);
+  box-shadow: 0 6px 7px -3px rgba(1, 1, 1, 0.5);
+}
+
+.Card-title {
+  margin: 0;
+  font-size: 21px;
+}

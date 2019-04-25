@@ -1,0 +1,16 @@
+.Main {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .Main {
+    max-width: 992px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Main {
+    max-width: 1200px;
+  }
+}

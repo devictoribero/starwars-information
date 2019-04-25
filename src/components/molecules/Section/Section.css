@@ -1,0 +1,20 @@
+.Section {
+  margin: 20px 0;
+}
+
+.Section-header {
+  margin-bottom: 16px;
+}
+
+.Section-title {
+  margin: 0;
+  color: white;
+}
+.Section-title:after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.Section + .Section {
+  margin-top: 40px;
+}
