@@ -13,7 +13,11 @@ export function FilmsSection() {
     <Section title='Films'>
       <Grid>
         {films.map(({title, url}) =>
-          <Card key={title} title={title} url={url}/>
+          <Card key={title} url={url}>
+            <span style={{margin: 0, fontSize: '21px', fontWeight: 600}}>
+              {title}
+            </span>
+          </Card>
         )}
       </Grid>
     </Section>

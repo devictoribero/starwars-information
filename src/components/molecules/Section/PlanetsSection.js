@@ -5,15 +5,19 @@ import {Grid} from '../../atoms/Grid/Grid'
 import {useStarWarsApi} from '../../../hooks/useStarWarsApi'
 
 export function PlanetsSection() {
-  const planets = useStarWarsApi({category: 'planets'})
+  const data = useStarWarsApi({category: 'planets'})
 
-  if(!planets) return null
+  if(!data) return null
 
   return(
     <Section title='Planets'>
       <Grid>
-        {planets.map(({name, url}) =>
-          <Card key={name} title={name} url={url}/>
+        {data.map(({name, url}) =>
+          <Card key={name} url={url}>
+            <span style={{margin: 0, fontSize: '21px', fontWeight: 600}}>
+              {name}
+            </span>
+          </Card>
         )}
       </Grid>
     </Section>

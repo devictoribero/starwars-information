@@ -13,7 +13,11 @@ export function PeopleSection() {
     <Section title='Characters'>
       <Grid>
         {data.map(({name, url}) =>
-          <Card key={name} title={name} url={url}/>
+          <Card key={name} url={url}>
+            <span style={{margin: 0, fontSize: '21px', fontWeight: 600}}>
+              {name}
+            </span>
+          </Card>
         )}
       </Grid>
     </Section>
