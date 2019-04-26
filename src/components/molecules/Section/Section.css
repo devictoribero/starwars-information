@@ -10,10 +10,6 @@
   margin: 0;
   color: white;
 }
-.Section-title:after {
-  content: ">";
-  margin-left: 10px;
-}
 
 .Section + .Section {
   margin-top: 40px;

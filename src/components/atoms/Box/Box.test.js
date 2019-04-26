@@ -1,19 +1,18 @@
 import React from 'react';
 import { render, cleanup } from 'react-testing-library'
 import 'jest-dom/extend-expect'
-import {Card} from './Card'
+import {Box} from './Box'
 afterEach(cleanup)
 
-describe('-- Atom -- Card', () =>{
+describe('-- Atom -- Box', () =>{
   it('Title is displayed correctly', () => {
-    const textToCheck = 'mini'
-    const {getByText} = render(<Card title={textToCheck} text={'whatever'}/>)
-    expect(getByText(textToCheck)).toBeInTheDocument()
+    const {getByText} = render(<Box id='testid' url='/url-to-test'>something</Box>)
+    expect(getByAttribute('href')).to()
   })
 
   it('Text is displayed correctly', () => {
     const textToCheck = 'she is cute'
-    const {getByText} = render(<Card title='whatever' text={textToCheck}/>)
+    const {getByText} = render(<Box title='whatever' text={textToCheck}/>)
     expect(getByText(textToCheck)).toBeInTheDocument()
   })
 })

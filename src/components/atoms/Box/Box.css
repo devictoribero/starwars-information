@@ -1,4 +1,4 @@
-.Card {
+.Box {
   display: block;
   box-sizing: border-box;
   padding: 10px;
@@ -16,14 +16,15 @@
 
   transition: background-image ease 0.35s, transform ease 0.35s;
 }
-.Card:hover {
+.Box:hover {
   box-shadow: 0 6px 7px -3px rgba(1, 1, 1, 0.5);
   transform: scale(1.25);
   background-image: linear-gradient(to bottom right, #131313, #202020);
   z-index: 10;
+  box-shadow: 0 8px 19px 6px #0b0b0b;
 }
 
-.Card-title {
+.Box-title {
   margin: 0;
   font-size: 21px;
 }
